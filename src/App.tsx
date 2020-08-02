@@ -8,6 +8,7 @@ import Typography from '@material-ui/core/Typography';
 import Container from '@material-ui/core/Container';
 import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper';
+import MaterialTable from 'material-table';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -48,7 +49,27 @@ function App() {
         <Container maxWidth="lg" className={classes.container}>
           <Grid item xs={12}>
             <Paper className={classes.paper}>
-              <h1>Hello World</h1>
+              <MaterialTable
+                columns={[
+                  { title: "Adı", field: "name" },
+                  { title: "Soyadı", field: "surname" },
+                  { title: "Doğum Yılı", field: "birthYear", type: "numeric" },
+                  {
+                    title: "Doğum Yeri",
+                    field: "birthCity",
+                    lookup: { 34: "İstanbul", 63: "Şanlıurfa" },
+                  },
+                ]}
+                data={[
+                  {
+                    name: "Mehmet",
+                    surname: "Baran",
+                    birthYear: 1987,
+                    birthCity: 63,
+                  },
+                ]}
+                title="Demo Title"
+              />
             </Paper>
           </Grid>
         </Container>
