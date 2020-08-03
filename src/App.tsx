@@ -76,10 +76,12 @@ function App() {
                       title: '割引率',
                       field: 'discountRate',
                       filtering: false,
+                      cellStyle: { textAlign: 'right' },
                     },
                     {
                       title: '利用開始日',
                       field: 'startDate',
+                      cellStyle: { textAlign: 'right' },
                       filterComponent: (props) => (
                         <FilterDatePicker
                           columnDef={props.columnDef}
@@ -95,6 +97,7 @@ function App() {
                     {
                       title: '利用終了日',
                       field: 'endDate',
+                      cellStyle: { textAlign: 'right' },
                       filterComponent: (props) => (
                         <FilterDatePicker
                           columnDef={props.columnDef}
