@@ -36,6 +36,49 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
+const tableData = [
+  {
+    couponId: '0001',
+    storeName: '秋葉原店',
+    couponName: '日用品 お得クーポン',
+    discountRate: 10,
+    startDate: '2020-08-01',
+    endDate: '2020-08-07',
+  },
+  {
+    couponId: '0002',
+    storeName: '秋葉原店',
+    couponName: '酒類 お得クーポン',
+    discountRate: 5,
+    startDate: '2020-08-10',
+    endDate: '2020-08-20',
+  },
+  {
+    couponId: '0003',
+    storeName: '秋葉原店',
+    couponName: '食料品 お得クーポン',
+    discountRate: 8,
+    startDate: '2020-08-01',
+    endDate: '2020-08-31',
+  },
+  {
+    couponId: '0004',
+    storeName: '秋葉原店',
+    couponName: '化粧品 お得クーポン',
+    discountRate: 15,
+    startDate: '2020-08-21',
+    endDate: '2020-08-31',
+  },
+  {
+    couponId: '0004',
+    storeName: '秋葉原店',
+    couponName: '全商品 お得クーポン',
+    discountRate: 3,
+    startDate: '2020-08-25',
+    endDate: '2020-08-26',
+  },
+];
+
 function App() {
   const classes = useStyles();
   return (
@@ -64,18 +107,15 @@ function App() {
                     {
                       title: 'クーポン ID',
                       field: 'couponId',
-                      filtering: false,
                     },
-                    { title: '店舗', field: 'storeName', filtering: false },
+                    { title: '店舗', field: 'storeName' },
                     {
                       title: 'クーポン名',
                       field: 'couponName',
-                      filtering: false,
                     },
                     {
                       title: '割引率',
                       field: 'discountRate',
-                      filtering: false,
                       cellStyle: { textAlign: 'right' },
                     },
                     {
@@ -111,48 +151,7 @@ function App() {
                       ) => !filterValue || rowData.endDate <= filterValue,
                     },
                   ]}
-                  data={[
-                    {
-                      couponId: '0001',
-                      storeName: '秋葉原店',
-                      couponName: '日用品 お得クーポン',
-                      discountRate: 10,
-                      startDate: '2020-08-01',
-                      endDate: '2020-08-07',
-                    },
-                    {
-                      couponId: '0002',
-                      storeName: '秋葉原店',
-                      couponName: '酒類 お得クーポン',
-                      discountRate: 5,
-                      startDate: '2020-08-10',
-                      endDate: '2020-08-20',
-                    },
-                    {
-                      couponId: '0003',
-                      storeName: '秋葉原店',
-                      couponName: '食料品 お得クーポン',
-                      discountRate: 8,
-                      startDate: '2020-08-01',
-                      endDate: '2020-08-31',
-                    },
-                    {
-                      couponId: '0004',
-                      storeName: '秋葉原店',
-                      couponName: '化粧品 お得クーポン',
-                      discountRate: 15,
-                      startDate: '2020-08-21',
-                      endDate: '2020-08-31',
-                    },
-                    {
-                      couponId: '0004',
-                      storeName: '秋葉原店',
-                      couponName: '全商品 お得クーポン',
-                      discountRate: 3,
-                      startDate: '2020-08-25',
-                      endDate: '2020-08-26',
-                    },
-                  ]}
+                  data={tableData}
                   title="クーポン一覧"
                 />
               </MuiPickersUtilsProvider>
