@@ -8,13 +8,16 @@ const useStyles = makeStyles(() => ({
   },
 }));
 
-const FilterDatePicker = (props: {
+type Props = {
   columnDef: any;
   onFilterChanged: (rowId: string, value?: string | null) => void;
   label?: string;
-}) => {
+};
+
+const FilterDatePicker: React.FC<Props> = (props) => {
   const { columnDef, onFilterChanged, label } = props;
   const classes = useStyles();
+
   return (
     <KeyboardDatePicker
       className={classes.date}

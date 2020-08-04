@@ -79,8 +79,9 @@ const tableData = [
   },
 ];
 
-function App() {
+const App: React.FC = () => {
   const classes = useStyles();
+
   return (
     <div className={classes.root}>
       <CssBaseline />
@@ -161,6 +162,6 @@ function App() {
       </main>
     </div>
   );
-}
+};
 
 export default App;
