@@ -12,7 +12,7 @@ import MaterialTable from 'material-table';
 import { MuiPickersUtilsProvider } from '@material-ui/pickers';
 import DateFnsUtils from '@date-io/date-fns';
 
-import FilterDatePicker from './FilterDatePicker';
+import FilterDatePicker from './components/FilterDatePicker';
 
 const useStyles = makeStyles((theme) => ({
   root: {
