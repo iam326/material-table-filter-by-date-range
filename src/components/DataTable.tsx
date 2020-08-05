@@ -34,7 +34,7 @@ const tableData = [
   {
     couponId: '0004',
     storeName: '秋葉原店',
-    couponName: '化粧品 お得クーポン',
+    couponName: '日用品 お得クーポン',
     discountRate: 15,
     startDate: '2020-09-01',
     endDate: '2020-09-30',
