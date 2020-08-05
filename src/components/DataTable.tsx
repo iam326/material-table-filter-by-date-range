@@ -2,6 +2,7 @@ import React from 'react';
 import MaterialTable from 'material-table';
 import { MuiPickersUtilsProvider } from '@material-ui/pickers';
 import DateFnsUtils from '@date-io/date-fns';
+import jaLocale from 'date-fns/locale/ja';
 
 import FilterDatePicker from './FilterDatePicker';
 
@@ -35,22 +36,22 @@ const tableData = [
     storeName: '秋葉原店',
     couponName: '化粧品 お得クーポン',
     discountRate: 15,
-    startDate: '2020-08-21',
-    endDate: '2020-08-31',
+    startDate: '2020-09-01',
+    endDate: '2020-09-30',
   },
   {
-    couponId: '0004',
+    couponId: '0005',
     storeName: '秋葉原店',
     couponName: '全商品 お得クーポン',
     discountRate: 3,
-    startDate: '2020-08-25',
-    endDate: '2020-08-26',
+    startDate: '2020-09-10',
+    endDate: '2020-09-24',
   },
 ];
 
 const DataTable: React.FC = () => {
   return (
-    <MuiPickersUtilsProvider utils={DateFnsUtils}>
+    <MuiPickersUtilsProvider utils={DateFnsUtils} locale={jaLocale}>
       <MaterialTable
         options={{
           search: false,
