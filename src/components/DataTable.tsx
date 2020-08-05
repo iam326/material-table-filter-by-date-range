@@ -17,7 +17,7 @@ const tableData = [
   },
   {
     couponId: '0002',
-    storeName: '秋葉原店',
+    storeName: '浅草店',
     couponName: '酒類 お得クーポン',
     discountRate: 5,
     startDate: '2020-08-10',
@@ -33,7 +33,7 @@ const tableData = [
   },
   {
     couponId: '0004',
-    storeName: '秋葉原店',
+    storeName: '浅草店',
     couponName: '日用品 お得クーポン',
     discountRate: 15,
     startDate: '2020-09-01',
