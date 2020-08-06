@@ -3,7 +3,8 @@
 [material-table](https://material-table.com/#/) で日付範囲指定によるフィルタリングを実現します。
 
 ## Demo
-hogehoge
+
+![demo](./demo.gif)
 
 ## Environment
 
