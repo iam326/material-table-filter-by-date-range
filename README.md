@@ -14,6 +14,9 @@ ProductName:	Mac OS X
 ProductVersion:	10.14.6
 BuildVersion:	18G103
 
+$ node --version
+v12.12.0
+
 $ npm --version
 6.14.5
 
