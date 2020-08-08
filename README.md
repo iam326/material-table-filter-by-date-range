@@ -31,7 +31,7 @@ info "create-react-app@3.4.0" has binaries:
 
 ...
 
-$ $ yarn list --depth=0
+$ yarn list --depth=0
 ...
 
 @material-ui/core@4.11.0
