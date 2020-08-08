@@ -24,9 +24,23 @@ $ yarn --version
 1.19.1
 
 $ yarn global list
+...
+
 info "create-react-app@3.4.0" has binaries:
    - create-react-app
-   ...
+
+...
+
+$ $ yarn list --depth=0
+...
+
+@material-ui/core@4.11.0
+material-table@1.67.1
+react@16.13.1
+react-dom@16.13.1
+typescript@3.7.5
+
+...
 ```
 
 ## Usage
