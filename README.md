@@ -18,10 +18,15 @@ $ node --version
 v12.12.0
 
 $ npm --version
-6.14.5
+6.11.3
 
 $ yarn --version
-1.22.4
+1.19.1
+
+$ yarn global list
+info "create-react-app@3.4.0" has binaries:
+   - create-react-app
+   ...
 ```
 
 ## Usage
